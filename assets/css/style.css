@@ -355,7 +355,10 @@ i.red{
 }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen 
+and (min-device-width: 320px)
+and (max-device-width: 736px)
+and (orientation: portrait) {
 
 	.navbar-brand {
 		display: inline;
@@ -371,6 +374,32 @@ i.red{
 
 	#sermonRowB {
 		margin-top: 0px;
+	}
+
+	.sermonDes {
+		text-align: center;
+	}
+
+	.infoRow {
+		text-align: center;
+	}
+}
+
+@media only screen 
+and (min-device-width: 320px)
+and (max-device-width: 736px)
+and (orientation: landscape) {
+
+	.navbar-brand {
+		display: inline;
+	}
+
+	#bannerTitle, #bannerTitleB, #bannerSub {
+		display: none;
+	}
+
+	#churchImg {
+		display: none;
 	}
 
 	.sermonDes {
