@@ -36,8 +36,8 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="menuOption"><a href="#anchor1">HOME</a></li>
-                    <li class="menuOption"><a href="#anchor2">MEDIA</a></li>
+                    <li class="menuOption"><a href="#anchor1" onclick="closeMenu()">HOME</a></li>
+                    <li class="menuOption"><a href="#anchor2" onclick="closeMenu()">MEDIA</a></li>
                     <li class="menuOption"><a href="javascript:void(0)" onclick="openNav()">CONTACT</a></li>
                 </ul>
             </div>
@@ -271,7 +271,7 @@
 		<a class="socLink" href="#"><h4>Twitter <i class="fab fa-twitter"></i></h4></a>
 	</div>
 </div>
-</div>
+<!-- </div> -->
 <div class="container-fluid">
     <div class="row" id="anchor3">
         <div class="col-md-12 col-xs-12" id="footer">
@@ -286,15 +286,21 @@
         </div>
     </div>
 </div>
+</div>
 <script>
 
 function openNav() {
-        document.getElementById("myNav").style.width = "100%";
-    }
+  document.getElementById("myNav").style.width = "100%";
+  $('.collapse').collapse('hide');
+}
 
-    function closeNav() {
-        document.getElementById("myNav").style.width = "0%";
-    }
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+function closeMenu() {
+  $('.collapse').collapse('hide');  
+}
 
 
 $(document).ready(function() {

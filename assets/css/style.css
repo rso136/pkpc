@@ -377,6 +377,10 @@ i.red{
 		text-align: center;
 	}
 
+	.infoRow {
+		text-align: center;
+	}
+
 }
 
 @media only screen 
