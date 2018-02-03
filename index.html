@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Montserrat|Lora" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+	<div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="#">Twitter<br><i class="fab fa-twitter"></i></a>
+            <a href="#">Facebook<br><i class="fab fa-facebook-square"></i></a>
+            <a href="mailto:PKPCInfo@gmail.com" target="_blank">Email<br><i class="far fa-envelope"></i></a>
+            <br>
+            <a id="closeOverlay" href="javascript:void(0)" onclick="closeNav()"><i class="far fa-arrow-alt-circle-left"></i> Go Back</a>
+        </div>
+    </div>
+	<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand navbar-left" href="#"><b>PHILADELPHIA KPC</b></a>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" id="hamburger">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="menuOption"><a href="#anchor1">HOME</a></li>
+                    <li class="menuOption"><a href="#anchor2">MEDIA</a></li>
+                    <li class="menuOption"><a href="javascript:void(0)" onclick="openNav()">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron banner" id="anchor1">
+    	<b><i><h2 id="bannerTitle">PHILADELPHIA KOREAN</h2></i></b>
+    	<b><i><h2 id="bannerTitleB">PRESBYTERIAN CHURCH</h2></i></b>
+    	<i><h4 id="bannerSub">PCA (Presbyterian Church in America)</h4></i>
+    </div>
+<div class="container-fluid">
+	<div class="row">	
+		<div class="col-md-8 col-md-offset-2 col-xs-12" id="vision">
+			<h2 class="headings">Our Vision</h2>
+			<br>
+			<p id="visionText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec consectetur mi, sit amet commodo eros. Proin dictum ligula nec mattis elementum. Etiam scelerisque nisi a leo dictum, non molestie ex lobortis. Etiam sit amet sem nunc. Suspendisse facilisis id libero vitae tristique. Nam sed risus vel odio vehicula tempus in ultricies justo. Integer vitae turpis luctus, scelerisque lectus a, feugiat justo. Aliquam condimentum ipsum ut efficitur feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut orci quam, dapibus id tincidunt vel, interdum non risus. Cras dapibus ut dui nec fringilla.</p>
+		</div>
+	</div>
+	<div class="row" id="aboutRow">
+		<div class="col-md-3 col-md-offset-3 col-xs-12" id="about">
+			<br>
+			<h3 id="aboutHeading">Sunday Service Information</h3>
+			<h4>Worship Service - 11:00 am</h4>
+			<h4>Bible Study - 1:30 pm</h4>
+			<br>
+			<h4>Location:</h4>
+			<p>Philadelphia Korean Presbyterian Church</p>
+			<p>5842 Hoffman Ave</p>
+			<p>Philadelphia, PA 19143</p>
+			<br>
+		</div>
+		<div class="col-md-5 col-xs-12" id="imgRow">
+			<img src="assets/images/church.jpg" class="img-responsive" id="churchImg">
+		</div>
+	</div>
+  <section>
+  <!-- <div class="row">
+  	<div class="col-md-12 col-xs-12" id="imgsTitle">
+  		<h2>Gallery</h2>
+  	</div>
+  </div> -->
+  <div class="container gal-container">
+    <div class="col-md-8 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#1">
+          <img src="assets/images/1.jpg">
+        </a>
+        <div class="modal fade" id="1" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img src="assets/images/1.jpg">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>Sunrise Beach Trip</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#2">
+          <img src="assets/images/6.jpg">
+        </a>
+        <div class="modal fade" id="2" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img src="assets/images/6.jpg">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>Retreat Praise Practice</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#3">
+          <img src="assets/images/3.jpg">
+        </a>
+        <div class="modal fade" id="3" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img src="assets/images/3.jpg">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>Summer Beach Trip</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#4">
+          <img src="assets/images/4.jpg">
+        </a>
+        <div class="modal fade" id="4" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img src="assets/images/4.jpg">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>Philadelphia, PA</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-12 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#5">
+          <img src="assets/images/5.jpg">
+        </a>
+        <div class="modal fade" id="5" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <img src="assets/images/5.jpg">
+              </div>
+                <div class="col-md-12 description">
+                  <h4>Easter Service</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<div class="row">
+<div class="col-md-12 col-xs-12" id="mediaSection">
+<div class="row" id="anchor2">
+	<div class="col-md-12 col-xs-12" id="sermons">
+		<h2 class="headings">Media</h2>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-1 col-md-offset-3 col-xs-12">
+		<div style="text-align: center;">
+			<iframe width="100" height="100" src="https://www.youtube.com/embed/KkZqsZqiEIA"></iframe>
+		</div>
+	</div>
+	<div class="col-md-1 col-xs-12 sermonDes">
+		<p><b>"Truth, Tears, Anger, and Grace"</b></p>
+		<p>January 28, 2018</p>
+	</div>
+	<div class="col-md-1 col-xs-12">
+		<div style="text-align: center;">
+			<iframe width="100" height="100" src="https://www.youtube.com/embed/zihtjFaNRlA"></iframe>
+		</div>
+	</div>
+	<div class="col-md-1 col-xs-12 sermonDes">
+		<p><b>"The Cost of Mission"</b></p>
+		<p>January 21, 2018</p>
+	</div>
+	<div class="col-md-1 col-xs-12">
+		<div style="text-align: center;">
+			<iframe width="100" height="100" src="https://www.youtube.com/embed/pdgQwh8sDbA"></iframe>
+		</div>
+	</div>
+	<div class="col-md-1 col-xs-12 sermonDes">
+		<p><b>"When I Survey"</b></p>
+		<p>January 14, 2018</p>
+	</div>
+</div>
+<div class="row" id="sermonRowB">
+	<div class="col-md-1 col-md-offset-3 col-xs-12">
+		<div style="text-align: center;">
+			<iframe width="100" height="100" src="https://www.youtube.com/embed/ux0_5zctrsI"></iframe>
+		</div>
+	</div>
+	<div class="col-md-1 col-xs-12 sermonDes">
+		<p><b>"Work and Rest"</b></p>
+		<p>January 7, 2018</p>
+	</div>
+	<div class="col-md-1 col-xs-12">
+		<div style="text-align: center;">
+			<iframe width="100" height="100" src="https://www.youtube.com/embed/rNMKtOoGOFE"></iframe>
+		</div>
+	</div>
+	<div class="col-md-1 col-xs-12 sermonDes">
+		<p><b>"Lord of the Wine"</b></p>
+		<p>December 31, 2017</p>
+	</div>
+	<div class="col-md-1 col-xs-12">
+		<div style="text-align: center;">
+			<iframe width="100" height="100" src="https://www.youtube.com/embed/U4JD0EW8De0"></iframe>
+		</div>
+	</div>
+	<div class="col-md-1 col-xs-12 sermonDes">
+		<p><b>"The Struggle for Love"</b></p>
+		<p>December 24, 2017</p>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12 col-xs-12" id="moreInfo">
+		<br>
+		<a href="https://www.youtube.com/channel/UCQmUmqrMGfnesNpdL7T282Q" target="_blank"><h4>Check out more sermons on our youtube channel <i class="fab fa-youtube"></i></h4></a>
+	</div>
+</div>
+</div>
+</div>
+<div class="row">
+	<div class="col-md-4 col-md-offset-3 col-xs-12 infoRow">
+		<h3>About Us</h3>
+		<br>
+		<a class="socLink" href="#"><h4>Statement of Faith</h4></a>
+		<a class="socLink" href="#"><h4>Ministry Philosophy</h4></a>
+		<a class="socLink" href="#"><h4>Core Values</h4></a>
+		<a class="socLink" href="#"><h4>Our History</h4></a>
+	</div>
+	<div class="col-md-4 col-xs-12 infoRow">
+		<h3>Social Media</h3>
+		<br>
+		<a class="socLink" href="#"><h4>Instagram <i class="fab fa-instagram"></i></h4></a>
+		<a class="socLink" href="#"><h4>Facebook <i class="fab fa-facebook-square"></i></h4></a>
+		<a class="socLink" href="#"><h4>Twitter <i class="fab fa-twitter"></i></h4></a>
+	</div>
+</div>
+</div>
+<div class="container-fluid">
+    <div class="row" id="anchor3">
+        <div class="col-md-12 col-xs-12" id="footer">
+
+
+		        	<h4>Philadelphia Korean Presbyterian Church (PCA)</h4>
+		            <p>5842 Hoffman Ave</p> 
+		            <p>Philadelphia, PA 19143</p>
+		            <p>PKPCInfo@gmail.com</p>
+		            <p>(215) 375 - 2824</p>
+
+        </div>
+    </div>
+</div>
+<script>
+
+function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+
+
+$(document).ready(function() {
+
+        $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+
+    });
+
+</script>
+</body>
+</html>
